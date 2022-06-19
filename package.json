@@ -1,8 +1,8 @@
 {
-  "homepage": "http://Samta1997.github.io/Textutil-React-App",
+  "homepage": "https://github.com/Dsamta/Textutil-React-App",
   "name": "textutil",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",

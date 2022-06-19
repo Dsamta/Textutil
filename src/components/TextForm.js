@@ -109,10 +109,10 @@ export default function TextForm(props) {
   return (
 <>
     
-    <div className='container' style={{backgroundColor:props.mode==='dark'?'white':'#033b52' }} >
+    <div className='container '  style={{backgroundColor:props.mode==='dark'?'white':'#033b52' }} >
         <h2>{props.heading}</h2>
-        <div className="mb-3 my-2">
-            <textarea className="form-control"  style={{backgroundColor:props.mode==='dark'?'white':'black',color:props.mode==='dark'?'black':'white'}} value={text} onChange={handleOnChange} id="myBox" rows="8"></textarea>
+        <div className="mb-3">
+            <textarea className="form-control my-3"  style={{backgroundColor:props.mode==='dark'?'white':'black',color:props.mode==='dark'?'black':'white'}} value={text} onChange={handleOnChange} id="myBox" rows="14"></textarea>
         </div>
         <button className="btn btn-primary mx-1 " onClick={handleUpClick}>Change to Uppercase</button>
         
