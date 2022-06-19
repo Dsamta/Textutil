@@ -4,7 +4,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import PropTypes from 'prop-types'
 import TextForm from './components/TextForm';
-import About from './components/About';
+//import About from './components/About';
 import Alert from './components/Alert';
 
 import {
@@ -59,9 +59,9 @@ function App() {
       {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Routes>
-          <Route path="/about" element={<About/>}>
+         { /*<Route path="/about" element={<About/>}>
             
-          </Route>
+          </Route>*/}
           <Route path="/" element={<TextForm showAlert={showAlert} heading="Enter the text to analyze" mode={mode}/>}>
             
           </Route>
