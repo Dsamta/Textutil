@@ -51,7 +51,7 @@ function App() {
   return (
     <>
       
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
        <Navbar title="Textutils" about="About" mode={mode} toggleMode={toggleMode} /> 
       <Alert alert={alert}/> 
       <div className="container-fluid " style={{color:mode==='dark'?'black':'white',backgroundColor:mode==='dark'?'white':'#033b52'}}>
