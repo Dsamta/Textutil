@@ -4,14 +4,15 @@ import './App.css';
 import Navbar from './components/Navbar';
 import PropTypes from 'prop-types'
 import TextForm from './components/TextForm';
-//import About from './components/About';
+import About from './components/About';
 import Alert from './components/Alert';
-/*import {
+
+import {
   BrowserRouter as Router,
   Routes,
   Route,
   //Link
-} from "react-router-dom";*/
+} from "react-router-dom";
 
 
 function App() {
@@ -50,13 +51,14 @@ function App() {
   return (
     <>
       
-      {/*<Router>*/}
-      <Navbar title="Textutils" about="About" mode={mode} toggleMode={toggleMode} /> 
+      <Router>
+       <Navbar title="Textutils" about="About" mode={mode} toggleMode={toggleMode} /> 
       <Alert alert={alert}/> 
       <div className="container-fluid " style={{color:mode==='dark'?'black':'white',backgroundColor:mode==='dark'?'white':'#033b52'}}>
-        {/* A <Switch> looks through its children <Route>s and
+   
+      {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-        {/*<Routes>
+        <Routes>
           <Route path="/about" element={<About/>}>
             
           </Route>
@@ -64,10 +66,10 @@ function App() {
             
           </Route>
           
-        </Routes>*/}
+        </Routes>
         <TextForm showAlert={showAlert} heading="Enter the text to analyze" mode={mode}/>
         </div>
-    {/*</Router>*/}
+    </Router>
       
    </>
   );
